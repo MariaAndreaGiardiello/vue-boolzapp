@@ -15,10 +15,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    font-family: 'Lato', sans-serif;
 }
 .green-container {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #009688;
 }
 
@@ -31,10 +32,11 @@ body {
 .chat-container {
     width: 1000px;
     height: 700px;
-    margin: -80px auto;
+    margin: -100px auto;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .contact-list {
@@ -45,7 +47,53 @@ body {
 .chat-window {
     width: 70%;
     height: 100%;
+    background-image: url(../img/mine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 /*-------------------
     MAIN
 -------------------*/
+.user-box {
+    height: 60px;
+    background-color: #E6DFD6;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 10px 10px;
+}
+
+.user-box-text {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-box-text-big {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons {
+    color: rgb(190, 190, 190);
+    padding: 0 5px;
+}
+
+.notification-box {
+    background-color: #8EDAFC;
+    height: 60px;
+}

@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/bec049b842.js" crossorigin="anonymous"></script>
+    <!-- /Fontawesome -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <!-- /Google Fonts-->
     <title>Boolzapp</title>
 </head>
 <body>
@@ -13,9 +21,35 @@
     <main class=" grey-container">
         <div class="chat-container">
             <div class="contact-list">
-                
+                <div class="user-box">
+                    <img class="img-circle" src="img/avatar_io.jpg" alt="">
+                    <div class="user-box-text">
+                        <div>Sofia</div>
+                        <div>
+                            <i class="fa-solid fa-circle-notch icons"></i>
+                            <i class="fa-solid fa-message icons"></i>
+                            <i class="fa-solid fa-ellipsis-vertical icons"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification-box">
+                    <div class="circle"></div>
+                    <div class="notification-text"></div>
+                </div>
             </div>
-            <div class="chat-window"></div>
+            <div class="chat-window">
+                <div class="user-box">
+                    <img class="img-circle" src="img/avatar_io.jpg" alt="">
+                    <div class="user-box-text-big">
+                        <div>Sofia</div>
+                        <div>
+                            <i class="fa-solid fa-circle-notch icons"></i>
+                            <i class="fa-solid fa-message icons"></i>
+                            <i class="fa-solid fa-ellipsis-vertical icons"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <script src="js/main.js"></script>
