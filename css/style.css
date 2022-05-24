@@ -36,12 +36,12 @@ body {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .contact-list {
     width: 30%;
     height: 100%;
+    background-color: #E6DFD6;
 }
 
 .chat-window {
@@ -51,6 +51,15 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.search {
+    width: 90%;
+    font-size: 10px;
+}
+
+.search-icon{
+    margin: auto 5px;
 }
 /*-------------------
     MAIN
@@ -96,4 +105,36 @@ body {
 .notification-box {
     background-color: #8EDAFC;
     height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    margin: auto 5px;
+    text-align: center;
+    line-height: 40px;
+    color: #8EDAFC;
+}
+
+.notification-text {
+    color: black;
+    font-size: 12px;
+}
+
+.grey-link {
+    color: gray;
+    font-size: 10px;
+}
+.search-bar {
+    width: 95%;
+    height: 25px;
+    margin: 5px auto;
+    background-color: white;
+    font-size: 10px;
+    line-height: 25px;
+    color: gray;
 }
