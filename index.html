@@ -46,7 +46,7 @@
                     <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">    
                 </div>
                 <ul class="contact-container">
-                    <li class="contact-box contact" v-for="contact in contacts" @click="contactPosition = index">
+                    <li class="contact-box contact" v-for="(contact, index) in contacts" @click="contactPosition = index">
                         <img class="img-circle" :src="`img/avatar${contact.avatar}.jpg`" alt="">
                         <div class="contact-name">{{contact.name}}</div>
                     </li>

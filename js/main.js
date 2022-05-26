@@ -8,7 +8,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-        contactPostition: 0,
+        contactPosition: 0,
         contacts: [
             {
                 name: 'Michele',
