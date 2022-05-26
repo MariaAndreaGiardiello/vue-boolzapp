@@ -45,14 +45,12 @@
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
                     <input class="search" type="text" placeholder="Cerca o inizia una nuova chat">    
                 </div>
-                <div class="contact-container">
-                    <ul>
-                        <li class="contact-box" v-for="contact in contacts">
-                            <img class="img-circle" :src="`img/avatar${contact.avatar}.jpg`" alt="">
-                            {{contact.name}}
-                        </li>
-                    </ul>
-                </div>
+                <ul class="contact-container">
+                    <li class="contact-box contact" v-for="contact in contacts" @click="contactPosition = index">
+                        <img class="img-circle" :src="`img/avatar${contact.avatar}.jpg`" alt="">
+                        <div class="contact-name">{{contact.name}}</div>
+                    </li>
+                </ul>
             </div>
             <div class="chat-window">
                 <div class="user-box">
@@ -64,6 +62,11 @@
                             <i class="fa-solid fa-message icons"></i>
                             <i class="fa-solid fa-ellipsis-vertical icons"></i>
                         </div>
+                    </div>
+                </div>
+                <div class="msg-window">
+                    <div class="message" v-for="message in contacts[contactPosition].messages">
+                        {{message}}
                     </div>
                 </div>
             </div>
