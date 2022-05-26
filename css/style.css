@@ -76,6 +76,30 @@ body {
     background-color: white;
     border-top: 0.5px solid lightgray
 }
+
+.sent{
+    background-color: white;
+    width: 50%;
+    align-self: flex-end;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+.received{
+    background-color: #009688;
+    width: 50%;
+    align-self: flex-start;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 5px;
+}
+
+.msg-window {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 /*-------------------
     MAIN
 -------------------*/

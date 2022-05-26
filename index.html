@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="msg-window">
-                    <div class="message" v-for="message in contacts[contactPosition].messages">
+                    <div class="message" v-for="message in contacts[contactPosition].messages" :class="message.status">
                         {{message}}
                     </div>
                 </div>
