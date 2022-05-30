@@ -75,7 +75,11 @@
                 </div>
                 <div class="text-area">
                     <div class="icons"><i class="fa-regular fa-face-smile"></i></div>
-                    <div class="text-here"><input type="text" placeholder=""></div>
+                    <div class="text-here">
+                        <form @submit.prevent="sendMsg">
+                            <input type="text" placeholder="" v-model="newMsg" @keyup.enter="sendMsg">
+                        </form>
+                    </div>
                     <div class="icons"><i class="fa-solid fa-microphone"></i></div>
                 </div>
             </div>

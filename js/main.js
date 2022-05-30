@@ -8,6 +8,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        newMsg: "",
         contactPosition: 0,
         contacts: [
             {
@@ -179,6 +180,15 @@ const app = new Vue({
         },
         hourMsg(index) {
             return this.contacts[index].messages[this.contacts[index].messages.length - 1].date.substr(11,5);
+        },
+        sendMsg() {
+            const newMessage = {
+                data:  hourMsg(index),
+                message: this.newMsg,
+                status: "sent",
+            }
+            this.contacts[this.contactPosition].messages.push(newMsg);
+            this.newMsg = "";
         }
     }
 })
