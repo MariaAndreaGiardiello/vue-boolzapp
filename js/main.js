@@ -176,6 +176,9 @@ const app = new Vue({
     methods : {
         lastMessage(index) {
             return this.contacts[index].messages[this.contacts[index].messages.length - 1].message;
+        },
+        hourMsg(index) {
+            return this.contacts[index].messages[this.contacts[index].messages.length - 1].date.substr(11,5);
         }
     }
 })
